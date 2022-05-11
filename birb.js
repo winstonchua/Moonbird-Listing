@@ -23,7 +23,7 @@ const client = new OpenSeaStreamClient({
 
 async function itemList(){
     
-    client.onItemListed("azuki", (item_listed) => {
+    client.onItemListed("proof-moonbirds", (item_listed) => {
         const tokenID = (item_listed["payload"]["item"]["nft_id"]).substring(52);
         console.log("Token ID is: "+tokenID)
         async function birb(tokenID){
